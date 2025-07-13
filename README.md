@@ -31,7 +31,11 @@ employee-ui/
 ├── EmployeeRenderer.java ← Java generator using FreeMarker
 ├── freemarker-2.3.32.jar ← FreeMarker template engine (jar)
 └── output/
-    └── index.html        ← Final rendered HTML
+    ├── index.html        ← Rendered HTML from FreeMarker
+    ├── css/
+    │   └── styles.css    ← Copied for deployment
+    └── js/
+        └── app.js        ← Copied for deployment
 
 Overview:
   The project features:
