@@ -51,4 +51,9 @@ What I’d Improve:
   UX improvements
   Allow persistent data saving
 
+<img width="1903" height="599" alt="Screenshot 2025-07-13 182315" src="https://github.com/user-attachments/assets/0c0565a9-72f1-42d4-a2a5-50df1a785599" />
+<img width="1900" height="156" alt="Screenshot 2025-07-13 182333" src="https://github.com/user-attachments/assets/e5210cb9-1765-4024-84f1-d0d48eefe708" />
+<img width="395" height="512" alt="Screenshot 2025-07-13 182356" src="https://github.com/user-attachments/assets/51158df4-94dc-410e-8a4d-dc31372479e5" />
+
+
 
