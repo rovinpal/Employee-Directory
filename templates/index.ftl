@@ -47,6 +47,8 @@
     </div>
   </div>
 
+  <div id="showCount" class="show-count"></div>
+
   <main id="employeeCards">
     <#list employees as emp>
       <div class="employee-card" data-id="${emp.id}">

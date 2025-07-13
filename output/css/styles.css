@@ -10,7 +10,6 @@ header {
   background: #333;
   color: #fff;
   padding: 10px 20px;
-  height: 50px;
 }
 
 header input {
@@ -39,7 +38,8 @@ header button {
   padding: 10px 20px;
 }
 
-.controls select, .controls button {
+.controls select,
+.controls button {
   margin-left: 10px;
   padding: 5px 10px;
 }
@@ -52,14 +52,12 @@ header button {
   padding: 20px;
 }
 
-
 .employee-card {
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 6px;
   background: #fff;
 }
-
 
 .employee-card button {
   margin-right: 5px;
@@ -71,10 +69,16 @@ header button {
   background: #f0f0f0;
 }
 
-.form-container input, .form-container button {
+.form-container input,
+.form-container button {
   display: block;
   margin: 8px 0;
   padding: 8px;
+}
+
+.show-count {
+  padding: 10px 20px;
+  font-weight: bold;
 }
 
 footer {
@@ -94,5 +98,4 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
-  
 }

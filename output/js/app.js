@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     role: card.querySelector("p:nth-of-type(3)").textContent.replace("Role: ", "")
   }));
   bindEvents();
-  updateShowCount();
+  applyFilters();
 });
 
 function render(data) {
@@ -32,7 +32,7 @@ function render(data) {
     container.appendChild(card);
   });
   bindRowEvents();
-  updateShowCount();
+  updateShowCount(data.length);
 }
 
 function bindEvents() {
@@ -42,7 +42,7 @@ function bindEvents() {
   document.getElementById("resetFilterBtn").addEventListener("click", resetFilters);
   document.getElementById("sortSelect").addEventListener("change", applyFilters);
   document.getElementById("showSelect").addEventListener("change", applyFilters);
-  document.getElementById("addEmployeeBtn").addEventListener("click", showForm);
+  document.getElementById("addEmployeeBtn").addEventListener("click", () => showForm());
   document.getElementById("employeeForm").addEventListener("submit", handleFormSubmit);
   document.getElementById("cancelFormBtn").addEventListener("click", hideForm);
   bindRowEvents();
@@ -122,11 +122,7 @@ function applyFilters() {
   const dept = document.getElementById("filterDepartment").value.toLowerCase();
   const role = document.getElementById("filterRole").value.toLowerCase();
   const sortBy = document.getElementById("sortSelect").value;
-
   const showLimit = parseInt(document.getElementById("showSelect").value);
-  const sliced = filtered.slice(0, showLimit);
-  render(sliced);
-
 
   let filtered = employees.filter(emp => {
     const fullName = `${emp.firstName} ${emp.lastName}`.toLowerCase();
@@ -138,7 +134,8 @@ function applyFilters() {
   });
 
   filtered.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
-  render(filtered);
+  const sliced = filtered.slice(0, showLimit);
+  render(sliced);
 }
 
 function resetFilters() {
@@ -148,6 +145,7 @@ function resetFilters() {
   applyFilters();
 }
 
-function updateShowCount() {
-  document.getElementById("showCount").textContent = `Showing ${employees.length} Employees`;
+function updateShowCount(count) {
+  const el = document.getElementById("showCount");
+  if (el) el.textContent = `Showing ${count} Employees`;
 }
