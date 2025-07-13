@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <!-- Header/Navbar -->
   <header>
     <div class="nav-left">Employee Directory</div>
     <div class="nav-center">
@@ -19,7 +18,6 @@
     </div>
   </header>
 
-  <!-- Filter Form (hidden by default) -->
   <div class="filter-form" id="filterForm">
     <input type="text" id="filterFirstName" placeholder="First Name">
     <input type="text" id="filterDepartment" placeholder="Department">
@@ -28,7 +26,6 @@
     <button id="resetFilterBtn">Reset</button>
   </div>
 
-  <!-- Controls -->
   <div class="controls">
     <div class="controls-left">
       <label>Sort:
@@ -50,7 +47,6 @@
     </div>
   </div>
 
-  <!-- Employee Cards -->
   <main id="employeeCards">
     <#list employees as emp>
       <div class="employee-card" data-id="${emp.id}">
@@ -64,7 +60,6 @@
     </#list>
   </main>
 
-  <!-- Add/Edit Employee Form (hidden by default) -->
   <div class="form-container" id="employeeFormContainer">
     <h2 id="formTitle">Add Employee</h2>
     <form id="employeeForm">
@@ -79,7 +74,6 @@
     </form>
   </div>
 
-  <!-- Footer -->
   <footer>
     © 2025 Employee Directory App. All rights reserved.
   </footer>

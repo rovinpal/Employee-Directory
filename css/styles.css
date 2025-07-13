@@ -1,10 +1,8 @@
-/* General Reset */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Header/Navbar */
 header {
   display: flex;
   justify-content: space-between;
@@ -23,7 +21,6 @@ header button {
   padding: 6px 12px;
 }
 
-/* Filter Form */
 .filter-form {
   display: none;
   padding: 10px;
@@ -35,7 +32,6 @@ header button {
   padding: 5px;
 }
 
-/* Controls */
 .controls {
   display: flex;
   justify-content: space-between;
@@ -47,11 +43,10 @@ header button {
   padding: 5px 10px;
 }
 
-/* Employee Cards */
 #employeeCards {
   display: grid;
   grid-template-columns: repeat(auto-fill, 250px);
-  justify-content: center; /* optional: center cards */
+  justify-content: center; 
   gap: 20px;
   padding: 20px;
 }
@@ -69,7 +64,6 @@ header button {
   margin-right: 5px;
 }
 
-/* Form Container */
 .form-container {
   display: none;
   padding: 20px;
@@ -82,7 +76,6 @@ header button {
   padding: 8px;
 }
 
-/* Footer */
 footer {
   text-align: center;
   background: #333;
@@ -91,7 +84,6 @@ footer {
   margin-top: 30px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
